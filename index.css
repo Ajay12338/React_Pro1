@@ -44,7 +44,7 @@ ul > li {
   margin: 10px;
 }
 .card:hover {
-  box-shadow: 0 0 10px 5px #000000;
+  box-shadow: 0 0 10px 2px #000000;
   border: 0 solid black;
   cursor: pointer;
 }
@@ -54,4 +54,17 @@ ul > li {
 .card > img {
   width: 90%;
   height: 30%;
+}
+.filter-btn {
+  padding: 10px;
+  margin-left: 2px;
+  border: 1px solid #000000;
+}
+.filter-btn-change {
+  padding: 10px;
+  margin-left: 2px;
+  background-color: red;
+  color: #19fa05;
+  border: 4px solid #fce512;
+  font-family: "Times New Roman", Times, serif;
 }
