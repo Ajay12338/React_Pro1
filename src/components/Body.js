@@ -3,9 +3,6 @@ import Card from "./Card";
 import { useState } from "react";
 
 const Body = () => {
-  let [original_data] = useState(
-    swiggy_obj.data.cards[2].card.card.gridElements.infoWithStyle.restaurants
-  );
   const [restaurantData, setRestaurantData] = useState(
     swiggy_obj.data.cards[2].card.card.gridElements.infoWithStyle.restaurants
   );
@@ -13,20 +10,7 @@ const Body = () => {
   return (
     <div id="body">
       <div id="search-box">
-        <input
-          type="text"
-          onChange={(e) => {
-            setInputData(e.target.value);
-            const filter_array = original_data.filter((item) => {
-              return item.info.name
-                .toLowerCase()
-                .includes(inputData.toLowerCase());
-            });
-            e.target.value == ""
-              ? setRestaurantData(original_data)
-              : setRestaurantData(filter_array);
-          }}
-        />
+        <input type="text" />
         <button>search</button>
       </div>
       <div className="cards">
